@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    footer {
+      background: #111827;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao meu site</h1>
+    <p>Site publicado na internet 🚀</p>
+    <button onclick="alert('Entre em contato!')">Contato</button>
+  </header>
+
+  <section>
+    <h2>Sobre</h2>
+    <p>
+      Este site foi criado em HTML e CSS e está disponível online para qualquer pessoa acessar.
+    </p>
+  </section>
+
+  <section>
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Serviço 1</h3>
+        <p>Descrição do serviço.</p>
+      </div>
+      <div class="card">
+        <h3>Serviço 2</h3>
+        <p>Descrição do serviço.</p>
+      </div>
+      <div class="card">
+        <h3>Serviço 3</h3>
+        <p>Descrição do serviço.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Email: contato@meusite.com</p>
+    <p>WhatsApp: (00) 00000-0000</p>
+  </section>
+
+  <footer>
+    <p>© 2026 - Meu Site</p>
+  </footer>
+
+</body>
+</html>
