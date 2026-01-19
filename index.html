@@ -3,69 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Site</title>
+  <title>REVOLTZ NEW ERA</title>
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f4f6fb;
+      color: #1f2933;
     }
+
+    /* HEADER */
     header {
-      background: #4f46e5;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
       color: white;
-      padding: 50px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 30px;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-    footer {
-      background: #111827;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+
     button {
-      background: #4f46e5;
-      color: white;
+      background: white;
+      color: #4f46e5;
       border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 14px 26px;
+      border-radius: 999px;
       cursor: pointer;
       font-size: 16px;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
+
     button:hover {
-      background: #4338ca;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #4f46e5;
+      display: block;
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+
+    section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #4b5563;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #4f46e5;
+    }
+
+    .card p {
+      margin: 0;
+      color: #374151;
+    }
+
+    /* CONTATO */
+    .contact {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-top: 30px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .contact span {
+      color: #4f46e5;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #9ca3af;
+      text-align: center;
+      padding: 25px;
+      margin-top: 80px;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bem-vindo ao meu site</h1>
-    <p>Site publicado na internet 🚀</p>
-    <button onclick="alert('DC: justmlnx')">Contato</button>
+    <h1>REVOLTZ NEW ERA</h1>
+    <p>Scripts, projetos e criatividade no mais alto nível 🚀</p>
+    <button onclick="alert('DC: justmlnx')">Entrar em contato</button>
   </header>
 
   <section>
     <h2>Sobre</h2>
     <p>
-      Site feito por: Just
+      Site desenvolvido por <strong>Just</strong>, focado em scripts, projetos e ideias criativas.
+      Aqui você encontra conteúdo exclusivo e em constante evolução.
     </p>
   </section>
 
@@ -73,27 +165,31 @@
     <h2>Serviços</h2>
     <div class="cards">
       <div class="card">
-        <h3>Script 1</h3>
-        <p>Script fraco troll..</p>
+        <h3>Script Troll</h3>
+        <p>Script troll leve para diversão e testes.</p>
       </div>
+
       <div class="card">
-        <h3>Script 2 2</h3>
-        <p>Script blox fruits.</p>
+        <h3>Blox Fruits</h3>
+        <p>Script focado em Blox Fruits com funcionalidades úteis.</p>
       </div>
+
       <div class="card">
-        <h3>Script 3</h3>
-        <p>Script para Fuja do tsunami para brainrot.</p>
+        <h3>Brainrot Tsunami</h3>
+        <p>Script para o jogo Fuja do Tsunami com mecânicas diferenciadas.</p>
       </div>
     </div>
   </section>
 
   <section>
     <h2>Contato</h2>
-    <p>Discord: justmlnx
+    <div class="contact">
+      Discord: <span>justmlnx</span>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 - REVOLTZ NEW ERA</p>
+    <p>© 2026 — REVOLTZ NEW ERA. Todos os direitos reservados.</p>
   </footer>
 
 </body>
